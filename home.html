@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Acropolis Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="home.html"><img src="logo.png"></a>
+                <ul>
+                    <li class="active"><a href="home.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Admission</a></li>
+                    <li><a href="http://aitr.ac.in/page-section/contact-us/">Contact Us</a></li>
+                    <li><a href="#">Student Login</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h1>Welcome to Acropolis</h1>
+                <button class="enroll"><a href="./enroll.html">ENROLL NOW</a></button>
+            </div>
+
+            <div class="title2">
+                <h2>Our Philosophy</h2>
+                <hr class="ph1">
+
+                <div class="phil">
+                    <p>We, the community members from teachers and researchers to other staff members and students, at
+                        Acropolis aspire to establish a system of quality assurance, which would on a continuous basis
+                        evaluate and monitor the quality of education and training imparted at the institute; improve
+                        the teaching and learning process; and ultimately develop the institute as a center of
+                        excellence. We will, thus, be contributing to the growth of quality technical education by
+                        upholding the highest ethical and professional standards.</p>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/lrxus4g4tAE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <style>
+                .courses {
+                    background-color: #f80;
+                    color: white;
+                    cursor: pointer;
+                    padding: 20px;
+                    margin-top: 4px;
+                    /*margin-bottom: 3px;*/
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    font-size: 18px;
+                    transition: 0.4s;
+                }
+
+                .active,
+                .courses:hover {
+                    background-color: rgb(221, 50, 255);
+                }
+
+                .panel {
+                    padding: 0 18px;
+                    display: none;
+                    background-color: #ccc;
+                    overflow: hidden;
+                }
+
+                h2.heading {
+                    color: #f80;
+                    margin-top: 30px;
+                    margin-bottom: 5px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+
+                hr.ph2 {
+                    border: solid #f80;
+                    width: 10%;
+                    size: 2px;
+                    text-align: center;
+                    margin-left: 45%;
+                }
+            </style>
+            </head>
+
+            <body>
+
+                <h2 class="heading">Courses Offered</h2>
+                <hr class="ph2">
+
+                <button class="courses">Bachelor of Technology (B Tech)</button>
+                <div class="panel">
+                    <h3>Branch and Specialization:</h3>
+                    <li>Computer Science & Engineering (Core)- 240 Seats</li>
+                    <li>Computer Science & Engineering (Artificial Intelligence & Machine Learning)- 60 Seats</li>
+                    <li>Computer Science & Engineering (Data Science)- 60 Seats</li>
+                    <li>Computer Science & Engineering (IOT)- 60 Seats</li>
+                    <li>Information Technology (I.T.)- 120 Seats</li>
+                    <li>Computer Science & Information Technology (CSIT)-180 Seats</li>
+                    <li>Civil Engineering (C.E.)-60 Seats</li>
+                    <li>Electronics & Communication (E.C.)-60 Seats</li>
+                    <li>Mechanical Engineering (M.E.)-60 Seats</li>
+                </div>
+
+                <button class="courses">Bachelor of Technology (B Tech Lateral Entry)</button>
+                <div class="panel">
+                    <h3>Branch and Specialization:</h3>
+                    <li>Computer Science & Engineering (Core)- 24 Seats</li>
+                    <li>Information Technology (I.T.)-12 Seats</li>
+                    <li>Computer Science & Information Technology (CSIT)- 6 Seats</li>
+                    <li>Civil Engineering (C.E.)– 12 Seats</li>
+                    <li>Electronics & Communication (E.C.)-12 Seats</li>
+                    <li>Mechanical Engineering (M.E.)-12 Seats</li>
+                </div>
+
+                <button class="courses">Master of Technology (M Tech)</button>
+                <div class="panel">
+                    <h3>Branch and Specialization:</h3>
+                    <li>Artificial Intelligence & Data Science (18 Seats)</li>
+                    <li>Internet of Things (18 Seats)</li>
+                </div>
+
+                <button class="courses">Engg. Diploma (Polytechnic)</button>
+                <div class="panel">
+                    <h3>Branch and Specialization:</h3>
+                    <li>Mechanical Engineering (60)</li>
+                    <li>Civil Engineering (60)</li>
+                </div>
+
+                <button class="courses">Master of Computer Application (MCA)</button>
+                <div class="panel">
+                    <h3>Branch and Specialization:</h3>
+                    <li>Master of Computer Application(60)</li>
+                    <li>Master of Computer Application(12)</li>
+                </div>
+
+                <button class="courses">Integrated MCA (5 Year)</button>
+                <div class="panel">
+                    <h3>Branch and Specialization:</h3>
+                    <li>Master of Computer Application (5 Years Integrated MCA Course)(60)</li>
+                </div>
+
+                <button class="courses">Master of Business Administration (MBA)</button>
+                <div class="panel">
+                    <h3>Branch and Specialization:</h3>
+                    <li>Finance, Marketing, Human Resources Operations & Systems, Business Analytics (60 – AITR
+                        Institute)</li>
+                    <li>Marketing, Finance, HRM, Operations and Systems, Business Analytics (300 – AFMR Institute)</li>
+                </div>
+
+                <script>
+                    var acc = document.getElementsByClassName("courses");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
+                <div class="vision">
+                    <h2 class="title3">Our Vision and Mission</h2>
+                    <hr class="vhr">
+                    <p><b>Vision:</b> To be an academic leader for the development of human potential so as to meet the
+                        global challenges.</p>
+
+                    <p><b>Mission:</b> To create an intellectually stimulating learning environment.
+                        To impart value based, innovative, and research oriented education.
+                        To develop positive attitude with communication skills.
+                        To increase employability and entrepreneurship through collaboration with industries and
+                        professional organizations.</p>
+                </div>
+
+                <div class="get_in_touch">
+                    <h4>Get in touch with us!</h4>
+                    <hr class="ph3">
+                    <p>If you have any questions regarding programs, facilities feel free to give us a call or send an
+                        email at info@acropolis.in</p>
+                </div>
+        </div>
+
+        <td>
+            <div class="address_section">
+                <div class="location">
+                    <h3>OUR LOCATION</h3></br>
+                    <p>Acropolis Institute</br>
+                        Bypass Road, Manglia Square, Manglia,<br />
+                        Indore, Madhya Pradesh-453771<br />
+                        India</p>
+                </div>
+                <div class="contact">
+                    <h3>CONTACT US</h3></br>
+                    <p>Phone Number : 0731-4730000, 4730001</br>
+                        Fax: 0731-4730011</br>
+                        General Email: info@acropolis.in</br>
+                        Admission Email: admission@acropolis.in</br>
+                        Career(HR) Email: hr@acropolis.in</br></p>
+                </div>
+                <div class="staffed">
+                    <h3>STAFFED HOURS</h3></br>
+                    <p>Monday to Friday</br>
+                        8-30am to 5-00pm</br>
+                        Saturday (3rd and 4th)</br>
+                        8-30am to 5-00pm</br></p>
+                </div>
+        </td>
+        </div>
+
+
+        <div class="map">
+            <p style="text-align: center;"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.4915267882348!2d75.94096541468987!3d22.821297529547873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631cf455b4cec3%3A0x426141aa8141f7a5!2sAcropolis%20Institute%20Of%20Technology%20And%20Research%20-%20AITR!5e0!3m2!1sen!2sin!4v1638872835181!5m2!1sen!2sin"
+                    width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+        </div>
+        </div>
+
+
+        <div id="socialmedia">
+            <footer>
+                <ul>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <li>
+                        <a href="https://www.linkedin.com/edu/acropolis-institutions-189017" class="fa fa-linkedin"></a>
+                        <a href="https://www.facebook.com/AcropolisCollegeIndore/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/AcropolisIndia/" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/channel/UC60LP9OIuv-HWXIVdolUeRQ" class="fa fa-youtube"></a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <p>Copyright © 2005-2015 Acropolis. Powered & Developed by IT Department</p>
+                </div>
+            </footer>
+        </div>
+    </header>
+</body>
+
+</html>
